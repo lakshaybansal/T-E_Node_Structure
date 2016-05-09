@@ -1,0 +1,232 @@
+{
+  "userId": "319718",
+  "favorite": true,
+  "travelType": "oneWay",
+  "state": "initial",
+  "sequence": [
+    "node1",
+    "node1.nodes1",
+    "node1.nodes2",
+    "node1.nodelt1",
+    "edge1",
+    "edge1.mode1",
+    "node2"
+  ],
+  "legs": {
+    "leg1": {
+      "source": "node1",
+      "destination": "node2",
+      "edge": "edge1"
+    },
+    "leg2": {
+      "source": "node2",
+      "destination": "node3",
+      "edge": "edge2"
+    }
+  },
+  "edges": {
+    "edge1": {
+      "status": "",
+      "childServices": {
+        "edgeMode1": {
+          "status": "",
+          "request": {
+            "travelStartDate": "",
+            "mode": "Flight",
+            "flight": {
+              "state": "",
+              "class": "",
+              "Nonstop": ""
+            },
+            "bus": {
+              "state": "",
+              "class": "",
+              "seatType": ""
+            },
+            "train": {
+              "state": "",
+              "class": ""
+            }
+          },
+          "final": {
+            "travelStartDate": "",
+            "mode": "",
+            "flight": {
+              "companyName": "",
+              "flightID": "",
+              "seatNumber": "",
+              "price": "",
+              "preferences": {
+                "class": "",
+                "Nonstop": "",
+                "meals": "",
+                "extra Baggage": ""
+              }
+            },
+            "bus": {
+              "companyName": "",
+              "busNumber": "",
+              "seatNumber": "",
+              "price": "",
+              "preferences": {
+                "class": "",
+                "seatType": ""
+              }
+            },
+            "train": {
+              "companyName": "",
+              "trainNumber": "",
+              "seatNumber": "",
+              "coachNumber": "",
+              "price": "",
+              "preferences": {
+                "class": ""
+              }
+            },
+            "travelStartTime": "",
+            "travelEndDate": "",
+            "travelEndTime": ""
+          }
+        }
+      }
+    }
+  },
+  "nodes": {
+    "node1": {
+      "cityName": "",
+      "status": "",
+      "childServices": {
+        "nodeS1": {
+          "type": "",
+          "status": "",
+          "request": {
+            "area": "",
+            "rating": "",
+            "roomType": "",
+            "checkinDate": "",
+            "checkoutDate": ""
+          },
+          "final": {
+            "image": "",
+            "name": "",
+            "rating": "",
+            "location": "",
+            "roomType": "",
+            "checkinDate": "",
+            "checkinTime": "",
+            "checkoutDate": "",
+            "checkoutTime": "",
+            "price": "",
+            "comments": ""
+          }
+        },
+        "nodeT1": {
+          "type": "",
+          "status": "",
+          "request": {
+            "source": "",
+            "destination": "",
+            "type": "",
+            "pickupDate": "",
+            "pickupTime": ""
+          },
+          "final": {
+            "source": "",
+            "destination": "",
+            "type": "",
+            "pickupDate": "",
+            "pickupTime": "",
+            "dropDate": "",
+            "dropTime": "",
+            "cab": {
+              "image": "",
+              "companyName": "",
+              "cabNumber": "",
+              "driverDetails": {
+                "name": ""
+              },
+              "estimatedPrice": "",
+              "cabType": ""
+            },
+            "bus": {
+              "image": "",
+              "companyName": "",
+              "busNumber": "",
+              "busType": "",
+              "seatsType": "",
+              "price": ""
+            }
+          }
+        }
+      }
+    },
+    "node2": {
+      "cityName": "",
+      "status": "",
+      "childServices": {
+        "nodeS1": {
+          "type": "",
+          "status": "",
+          "request": {
+            "area": "",
+            "rating": "",
+            "roomType": "",
+            "checkinDate": "",
+            "checkoutDate": ""
+          },
+          "final": {
+            "image": "",
+            "name": "",
+            "rating": "",
+            "location": "",
+            "roomType": "",
+            "checkinDate": "",
+            "checkinTime": "",
+            "checkoutDate": "",
+            "checkoutTime": "",
+            "price": "",
+            "comments": ""
+          }
+        },
+        "nodeT1": {
+          "type": "",
+          "status": "",
+          "request": {
+            "source": "",
+            "destination": "",
+            "type": "",
+            "pickupDate": "",
+            "pickupTime": ""
+          },
+          "final": {
+            "source": "",
+            "destination": "",
+            "type": "",
+            "pickupDate": "",
+            "pickupTime": "",
+            "dropDate": "",
+            "dropTime": "",
+            "cab": {
+              "image": "",
+              "companyName": "",
+              "cabNumber": "",
+              "driverDetails": {
+                "name": ""
+              },
+              "estimatedPrice": "",
+              "cabType": ""
+            },
+            "bus": {
+              "image": "",
+              "companyName": "",
+              "busNumber": "",
+              "busType": "",
+              "seatsType": "",
+              "price": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

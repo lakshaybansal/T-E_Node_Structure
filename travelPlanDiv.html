@@ -1,0 +1,39 @@
+<h2>Hello World</h2>
+<div class=" line">
+
+    <div ng-repeat="(key, value) in plan.travelPlanJSON.nodes" class="node-add-action">
+
+        <div class="progress-line" ng-if="$index>=1">
+            <div class=" node-sm travel-button" ng-model="newObject[x.edge]"
+                 ng-click="Flight_buttion_Action(value)">
+                <i class="material-icons">flight</i>
+            </div>
+            <div class="middle-bar"></div>
+
+        </div>
+
+        <div class="node">
+            <div class="node-md" ng-click="plan.node_md_action_show(value)">
+                {{value.cityName
+                | limitTo:3 |
+                uppercase}}
+            </div>
+            <i class="material-icons node-1-1">hotel</i>
+            <i class="material-icons node-1-2">directions_car</i>
+            <div class="node-md-action" id="node-md-main-action" ng-show="value.show==true">
+                <input type="text" ng-model="value.cityName" class="node-md-action-input">
+            </div>
+
+        </div>
+        <div class=" node-add node" ng-if="$index>0"
+             ng-show="$index == (plan.travelPlanJSON.nodes | keylength)-1 ">
+            <div class=" glyphicon glyphicon-plus" ng-click="plan.addNode($index)"></div>
+        </div>
+        <div class=" node-add node" ng-if="$index>1"
+             ng-show="$index == (plan.travelPlanJSON.nodes | keylength)-1 ">
+            <div class="glyphicon glyphicon-minus" ng-click="plan.subNode($index)"></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
